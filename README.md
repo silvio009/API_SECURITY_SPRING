@@ -1,19 +1,38 @@
-📚 Seções
-Este projeto de API é composto por várias funcionalidades e componentes principais:
+📦 API Security com Spring Boot e JWT
+Este projeto é uma API robusta construída com Spring Boot que implementa autenticação e autorização usando JSON Web Tokens (JWT) em conjunto com Spring Security. A API é projetada para garantir que apenas usuários autenticados possam acessar endpoints protegidos.
 
-Autenticação JWT: Sistema de login que gera um token JWT para usuários autenticados, garantindo que apenas usuários autorizados possam acessar os recursos protegidos da API.
-Autorização: Implementa controle de acesso a endpoints específicos com base em roles definidas para os usuários, protegendo a aplicação contra acessos indevidos.
-Integração com Spring Security: Utilização do Spring Security para gerenciar a autenticação e autorização, fornecendo uma solução de segurança robusta e confiável.
-Filtros Personalizados: Implementação de filtros customizados para interceptar e validar tokens JWT em cada requisição, garantindo a integridade e segurança das operações.
-💼 Tecnologias Utilizadas
-Para o desenvolvimento desta API, foram utilizadas as seguintes tecnologias:
+ 🚀 Funcionalidades
+ 🔒 Autenticação JWT: Sistema de login que gera um token JWT para usuários autenticados.
+ 🔑 Autorização: Controle de acesso a endpoints específicos com base em roles de usuário.
+ 🛡️ Integração com Spring Security: Implementação de segurança robusta e personalizada para a API.
+ ⚙️ Filtros Personalizados: Validação de tokens JWT em cada requisição através de filtros customizados.
+🛠️ Tecnologias Utilizadas
+ Spring Boot: Framework principal para construção da API.
+ Spring Security: Para gerenciamento de autenticação e autorização.
+ JWT (JSON Web Token): Autenticação baseada em tokens.
+ Maven: Gerenciador de dependências.
+ Java 11: Linguagem de programação utilizada.
+📝 Como Executar
+ Clone o repositório:
 
-Spring Boot: Framework principal para construção da API, oferecendo uma base sólida e escalável.
-Spring Security: Ferramenta de segurança utilizada para gerenciar a autenticação e autorização de forma integrada com o Spring Boot.
-JWT (JSON Web Token): Tecnologia utilizada para autenticação baseada em tokens, permitindo uma comunicação segura entre cliente e servidor.
-Maven: Gerenciador de dependências que facilita o build e a configuração do projeto.
-Java 11: Linguagem de programação utilizada para o desenvolvimento da API, garantindo performance e compatibilidade com as bibliotecas e frameworks.
+bash
+Copiar código
+git clone https://github.com/silvio009/API_SECURITY_SPRING.git
+Navegue até o diretório do projeto:
+
+bash
+Copiar código
+cd API_SECURITY_SPRING
+Compile e execute a aplicação:
+
+bash
+Copiar código
+mvn spring-boot:run
+A API estará disponível em:
+
+arduino
+Copiar código
+http://localhost:8080
 🔍 Exemplo de Uso
 Login: Envie uma requisição POST para /auth/login com as credenciais de usuário. Receba um token JWT para autenticar as requisições subsequentes.
-
 Acesso a Endpoints Protegidos: Utilize o token JWT no header Authorization: Bearer <seu_token> para acessar os endpoints protegidos.
