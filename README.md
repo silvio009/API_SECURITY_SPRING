@@ -1,4 +1,4 @@
-#📦 API Security com Spring Boot e JWT
+##📦 API Security com Spring Boot e JWT
 Este projeto é uma API robusta construída com Spring Boot que implementa autenticação e autorização usando JSON Web Tokens (JWT) em conjunto com Spring Security. A API é projetada para garantir que apenas usuários autenticados possam acessar endpoints protegidos.
 
 #🚀 Funcionalidades
